@@ -1,6 +1,5 @@
-var punten = 0;
-
 function quiz() {
+  var punten = 0;
   var vrgn = ["parijs", "8", "ijselmeer"];
   var merken = ["Volkswagen", "Audi", "Opel", "Porsche", "BMW", "Mercedes", "Mercedes-Benz"];
   var eilanden = ["Texel", "Vlieland", "Terschelling", "Ameland", "Schiermonnikoog"];
@@ -18,11 +17,11 @@ function quiz() {
       punten++;
     }
   }
-  if (merken.includes(merk)) {
-    punten++;
-  }
-  if (eilanden.includes(eiland)) {
-    punten++;
-  }
-  document.write("je hebt ", punten, " punten");
+    if (merken.includes(merk)) {
+      punten++;
+    }
+    if (eilanden.includes(eiland)) {
+      punten++;
+    }
+document.getElementById("cijfer").innerHTML =  punten;
 }
